@@ -11,7 +11,8 @@ import line5 from "@/app/public/assets/contents/Line 5.svg"
 const page = () => {
   return (
     <main className='flex flex-col items-center justify-center'>
-      <div className='w-full h-20'/>
+      {/* hero section */}
+      <div className='w-full h-20'/> 
         <div className='flex flex-col w-full h-[316px] justify-center items-center'>
           <Image src={rectangle1} height={1000} width={1000} className='w-full h-full'alt='rectangle fixed'/>
           <Image src={houseLogo} height={77} width={77} className='absolute translate-y-[-50px]' alt='logo'/>
@@ -22,7 +23,8 @@ const page = () => {
               <h2 className='font-light'>Shop</h2>
             </div>
         </div>
-        <div className='flex flex-row items-center mt-16 h-[100px] w-full bg-[#FAF4F4]'>
+        {/* pink bar */}
+        <div className='flex flex-row items-center mt-16 h-[100px] w-full bg-[#FAF4F4]'> 
           <div className='flex flex-row ml-32 gap-3 justify-center w-[85px] '>
             <Image src={filter} height={25} width={25} alt='filter'/>
             <h2>Filter</h2>
@@ -35,9 +37,23 @@ const page = () => {
           </div>
           {/* <div className='flex flex-row ml-24 gap-3 justify-start w-[85px]'>
           </div> */}
-          <h1 className='lg:translate-x-[700px] sm:translate-x-[200px]'>Show</h1>
-          
+          <div className='flex flex-row justify-center items-center gap-4 ml-20'>
+            <h1 className='lg:translate-x-[500px] sm:translate-x-[100px]'>Show</h1>
+            <div className='bg-main w-[55px] h-[55px] justify-between items-center lg:translate-x-[500px] sm:translate-x-[100px]'>
+              <h2 className='mt-3 ml-4 text-xl text-[#9F9F9F]'>16</h2>
+            </div>
+          </div>
+          <div className='flex flex-row justify-center items-center gap-4 ml-20'>
+            <h1 className='lg:translate-x-[450px] sm:translate-x-[100px]'>Sort By</h1>
+            <div className='bg-main w-[188px] h-[55px] justify-between items-center lg:translate-x-[450px] sm:translate-x-[100px]'>
+              <h2 className='mt-3 ml-4 text-xl text-[#9F9F9F]'>Default</h2>
+            </div>
+          </div>
         </div>
+        <div className='flex flex-row justify-center items-center gap-4 mx-20 w-full bg-main'>
+          <div className='flex flex-col items-center justify-center w-[287px] '></div>
+        </div>
+
     </main>
   )
 }
