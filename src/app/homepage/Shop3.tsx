@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import trentonSofa from '../public/assets/contents/Trenton modular sofa_3 1.png'
+import trentonSofa from '../public/assets/contents/white-sofa-1.png'
 import graniteDining from '../public/assets/contents/Granite dining table with dining chair 1.png'
 import line1 from '../public/assets/contents/Line 1.png'
 

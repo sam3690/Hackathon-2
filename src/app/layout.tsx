@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import {Poppins} from 'next/font/google'
-import Footer from "./components/Footer";
+import Footer from "./homepage/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
