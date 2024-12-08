@@ -16,7 +16,6 @@ const HomePage = () => {
         <Asgaard/>
         <OurBlogs />
         <Ourinsta />
-        <Footer />
     </main>  
   )
 }

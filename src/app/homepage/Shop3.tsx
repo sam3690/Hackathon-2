@@ -12,7 +12,7 @@ const Shop3 = () => {
             <h1 className='text-5xl'>Top Picks for you</h1><br />
             <p className='text-[#9F9F9F]'>Find a bright ideal to suit your taste with our great selection of suspension, floor and table lights.</p>
         </div>
-        <div className='flex flex-row justify-center items-center gap-5 w-full h-[500px]'>
+        <div className='flex flex-row justify-center items-center gap-3 w-full h-[500px]'>
             <div className='flex flex-col justify-center items-center w-[300px] h-[400px]'>
                 <Image src={trentonSofa} width={1000} height={1000} alt='sofa' className='h-[400px] w-[400px]'/>
                 <h1 className='font-normal max-w-44'>Trenton Modular Sofa_3</h1>
