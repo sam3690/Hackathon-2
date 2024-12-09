@@ -28,7 +28,7 @@ const Navbar = () => {
     <div className='flex flex-row justify-between w-full h-20 px-4 absolute'>
         <div className='flex flex-row justify-between font-normal text-xl justify-self-center ml-[500px] items-center w-[30%] h-20 px-4 '>
             {navLinks.map((nav) => (
-                <a href={`/${nav.link}`} className='font-medium'>{nav.title}</a>
+                <a key={nav.id} href={`/${nav.link}`} className='font-medium'>{nav.title}</a>
             ))}
             
         </div>
