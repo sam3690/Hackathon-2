@@ -7,6 +7,7 @@ import asgaard from '@/app/public/assets/contents/Asgaard sofa 1.png'
 import yellowDelete from '@/app/public/assets/contents/yellow-delete.svg'
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const page = () => {
   return (
@@ -57,7 +58,7 @@ const page = () => {
               <h1 className='font-medium  text-lg'>Total</h1>
               <h1 className='font-medium text-2xl text-[#B88E2F]'>RS. 250,000.00</h1>
             </div>
-              <Button className='bg-transparent hover:bg-transparent text-black w-[222px] h-[59px] border-2 border-black rounded-2xl text-xl'>Checkout</Button>
+              <Link href={'/checkout'}><Button className='bg-transparent hover:bg-transparent text-black w-[222px] h-[59px] border-2 border-black rounded-2xl text-xl'>Checkout</Button></Link>
           </div>
         </div>      
           {/* pink section */}
