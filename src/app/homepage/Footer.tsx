@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <main className="w-full bg-white py-16">
+    <main className=" flex flex-col w-full h-[555px] justify-between pt-40 items-end  bg-white py-16">
       {/* Instagram Section */}
     <footer className="w-full py-2 px-4 md:px-6">
       <div className="container mx-auto max-w-6xl">

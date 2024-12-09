@@ -1,6 +1,6 @@
 import React from 'react'
-import rectangle1 from '@/app/public/assets/contents/Rectangle-1.png'
 import Image from 'next/image'
+import rectangle1 from '@/app/public/assets/contents/Rectangle-1.png'
 import houseLogo from '@/app/public/assets/contents/Meubel House_Logos-05.png'
 import arrow from '@/app/public/assets/contents/arrow.png'
 import filter from '@/app/public/assets/contents/system-uicons_filtering.png'
@@ -20,7 +20,7 @@ const page = () => {
           <Image src={houseLogo} height={77} width={77} className='absolute translate-y-[-50px]' alt='logo'/>
           <h1 className='text-5xl font-semibold absolute mt-26'>Shop</h1>
             <div className='flex flex-row justify-between items-center w-[121px] mt-20 absolute'>
-              <h2 className='font-normal'>Home</h2>
+              <h2 className='font-medium'>Home</h2>
               <Image src={arrow} height={20} width={20} className='mt-1' alt='arrow'/>
               <h2 className='font-light'>Shop</h2>
             </div>
@@ -57,12 +57,14 @@ const page = () => {
         </div>
         <Productlist/><br /><br />
         {/* Nav options */}
-        <div className='flex flex-row w-[400px] gap-3 h-[80px] justify-between '> 
-          <div className='bg-[#FBEBB5] h-[60px] w-[60px] text-lg rounded-lg px-6 py-4'>1</div>
-          <div className='bg-[#FFF9E5] h-[60px] w-[60px] text-lg rounded-lg px-6 py-4'>2</div>
-          <div className='bg-[#FFF9E5] h-[60px] w-[60px] text-lg rounded-lg px-6 py-4'>3</div>
-          <div className='bg-[#FFF9E5] h-[60px] w-[90px] text-lg rounded-lg px-6 py-4'>Next</div>
-        </div>
+        
+          <div className='flex flex-row w-[400px] gap-3 h-[80px] justify-between '> 
+            <div className='bg-[#FBEBB5] h-[60px] w-[60px] text-lg rounded-lg px-6 py-4'>1</div>
+            <div className='bg-[#FFF9E5] h-[60px] w-[60px] text-lg rounded-lg px-6 py-4'>2</div>
+            <div className='bg-[#FFF9E5] h-[60px] w-[60px] text-lg rounded-lg px-6 py-4'>3</div>
+            <div className='bg-[#FFF9E5] h-[60px] w-[90px] text-lg rounded-lg px-6 py-4'>Next</div>
+          </div>
+        
         {/* pink section */}
         <div className='flex flex-row justify-center items-center gap-8 p-24 w-full h-[300px] bg-[#FAF4F4]'>
               <div className='flex flex-col gap-2 w-[370px]'>

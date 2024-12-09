@@ -8,6 +8,10 @@ import kentTabel from '../assets/contents/Kent coffee table 1.png'
 import roundCoffTable from '../assets/contents/Round coffee table_color 2 1.png'
 import reclaimedTeak from '../assets/contents/Reclaimed teak coffee table 1.png'
 import plainCOlsole1 from '../assets/contents/Plain console_ 1.png'
+import mainlaptop from "@/app/public/assets/contents/Rectangle 70.png"
+import blogbook from "@/app/public/assets/contents/Rectangle 68.png"
+import blog from "@/app/public/assets/contents/Rectangle 68.png"
+import { StaticImageData } from "next/image";
 
 
 
@@ -89,4 +93,54 @@ export const shopLinks = [
     price:  'RS. 25,000',
     imgUrl: plainCOlsole1
   }
+]
+
+
+
+interface BlogPost {
+  title: string
+  date: string
+  excerpt: string
+  image: string | StaticImageData
+  author: string
+  category: string
+  slug: string
+}
+
+export const recentPosts: BlogPost[] = [
+  {
+    title: "Going all-in with millennial design",
+    date: "03 Aug 2022",
+    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.",
+    image: mainlaptop,
+    author: "Admin",
+    category: "Design",
+    slug: "millennial-design"
+  },
+  {
+    title: "Exploring new ways of decorating",
+    date: "03 Aug 2022",
+    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.",
+    image: blogbook,
+    author: "Admin",
+    category: "Interior",
+    slug: "exploring-decorating"
+  },
+  {
+    title: "Handmade pieces that took time to make",
+    date: "03 Aug 2022",
+    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.",
+    image: blog,
+    author: "Admin",
+    category: "Handmade",
+    slug: "handmade-pieces"
+  }
+]
+
+export const categories = [
+  { name: "Crafts", count: 2 },
+  { name: "Design", count: 8 },
+  { name: "Handmade", count: 7 },
+  { name: "Interior", count: 1 },
+  { name: "Wood", count: 6 }
 ]
