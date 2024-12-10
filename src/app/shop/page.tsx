@@ -26,29 +26,29 @@ const page = () => {
             </div>
         </div>
         {/* pink bar */}
-        <div className='flex flex-row items-center mt-16 h-[100px] w-full bg-[#FAF4F4]'> 
-          <div className='flex flex-row ml-32 gap-3 justify-center w-[85px] '>
-            <Image src={filter} height={25} width={25} alt='filter'/>
+        <div className='flex sm:flex-row flex-col items-center mt-16 sm:h-[100px] h-[130px] sm:pt-0 pt-5 w-full bg-[#FAF4F4]'> 
+          <div className='flex flex-row sm:ml-80 ml-0 gap-3 justify-center w-[30px] '>
+            <Image src={filter} height={25} width={25} alt='filter'  className='sm:h-[25px] h-[20px] w-[25px]'/>
             <h2>Filter</h2>
-            <Image src={grid} height={25} width={25} alt='grid'/>
-            <Image src={viewList} height={25} width={25} alt='viewList'/>
+            <Image src={grid} height={25} width={25} alt='grid' className='sm:h-[25px] h-[20px] w-[25px]'/>
+            <Image src={viewList} height={25} width={25} alt='viewList' className='sm:h-[25px] h-[20px] w-[25px]'/>
             <Image src={line5} height={10} width={25} alt='line5' className='h-6 justify-start ml-5 text-black'/>
-          </div>
           <div className='flex flex-row justify-'>
-              <h2 className='translate-x-20'>Showing 1–16 of 32 results</h2>
+              <h2 className='text-nowrap sm:text-lg text-sm'>Showing 1–16 of 32 </h2>
+          </div>
           </div>
           {/* <div className='flex flex-row ml-24 gap-3 justify-start w-[85px]'>
           </div> */}
           <div className='flex flex-row justify-center items-center gap-4 ml-20'>
             <h1 className='lg:translate-x-[500px] sm:translate-x-[100px]'>Show</h1>
-            <div className='bg-main w-[55px] h-[55px] justify-between items-center lg:translate-x-[500px] sm:translate-x-[100px]'>
-              <h2 className='mt-3 ml-4 text-xl text-[#9F9F9F]'>16</h2>
+            <div className='bg-main sm:w-[55px] w-[30px] sm:h-[55px] h-[35px] justify-between items-center lg:translate-x-[100px] sm:translate-x-[500px]'>
+              <h2 className='sm:mt-3 mt-1 sm:ml-4 ml-2 sm:text-xl text-md text-[#9F9F9F]'>16</h2>
             </div>
           </div>
           <div className='flex flex-row justify-center items-center gap-4 ml-20'>
             <h1 className='lg:translate-x-[450px] sm:translate-x-[100px]'>Sort By</h1>
-            <div className='bg-main w-[188px] h-[55px] justify-between items-center lg:translate-x-[450px] sm:translate-x-[100px]'>
-              <h2 className='mt-3 ml-4 text-xl text-[#9F9F9F]'>Default</h2>
+            <div className='bg-main sm:w-[188px] w-[80px] sm:h-[55px] h-[30px] justify-between items-center lg:translate-x-[450px] sm:translate-x-[100px]'>
+              <h2 className='sm:mt-3 mt-1 sm:ml-4 ml-2 sm:text-xl text-md text-[#9F9F9F]'>Default</h2>
             </div>
           </div>
         </div>
@@ -58,26 +58,26 @@ const page = () => {
         <Productlist/><br /><br />
         {/* Nav options */}
         
-          <div className='flex flex-row w-[400px] gap-3 h-[80px] justify-between '> 
-            <div className='bg-[#FBEBB5] h-[60px] w-[60px] text-lg rounded-lg px-6 py-4'>1</div>
-            <div className='bg-[#FFF9E5] h-[60px] w-[60px] text-lg rounded-lg px-6 py-4'>2</div>
-            <div className='bg-[#FFF9E5] h-[60px] w-[60px] text-lg rounded-lg px-6 py-4'>3</div>
-            <div className='bg-[#FFF9E5] h-[60px] w-[90px] text-lg rounded-lg px-6 py-4'>Next</div>
+          <div className='flex flex-row sm:w-[400px] w-[200px] sm:gap-3 gap-0 h-[80px] justify-between '> 
+            <div className='bg-[#FBEBB5] sm:h-[60px] h-[30px] sm:w-[60px] w-[30px] sm:text-lg text-sm rounded-lg sm:px-6 px-3 sm:py-4 py-2'>1</div>
+            <div className='bg-[#FFF9E5] sm:h-[60px] h-[30px] sm:w-[60px] w-[30px] sm:text-lg text-sm rounded-lg sm:px-6 px-3 sm:py-4 py-2'>2</div>
+            <div className='bg-[#FFF9E5] sm:h-[60px] h-[30px] sm:w-[60px] w-[30px] sm:text-lg text-sm rounded-lg sm:px-6 px-3 sm:py-4 py-2'>3</div>
+            <div className='bg-[#FFF9E5] sm:h-[60px] h-[30px] sm:w-[90px] w-[55px] sm:text-lg text-sm rounded-lg sm:px-6 px-3 sm:py-4 py-2'>Next</div>
           </div>
         
         {/* pink section */}
-        <div className='flex flex-row justify-center items-center gap-8 p-24 w-full h-[300px] bg-[#FAF4F4]'>
+        <div className='flex sm:flex-row flex-col justify-center items-center gap-8 p-24 w-full sm:h-[300px] h-fit bg-[#FAF4F4]'>
               <div className='flex flex-col gap-2 w-[370px]'>
-                <h1 className='text-4xl font-semibold'>Free Delivery</h1>
-                <h2 className='text-xl font-normal text-[#9F9F9F]'>For all oders over $50, consectetur adipim scing elit.</h2>
+                <h1 className='text-4xl font-semibold sm:text-nowrap text-center'>Free Delivery</h1>
+                <h2 className='text-xl font-normal text-center text-[#9F9F9F]'>For all oders over $50, consectetur adipim scing elit.</h2>
               </div>
               <div className='flex flex-col gap-2 w-[370px]'>
-                <h1 className='text-4xl font-semibold'>90 Days Return</h1>
-                <h2 className='text-xl text-[#9F9F9F] font-normal'>If goods have problems, consectetur adipim scing elit.</h2>
+                <h1 className='text-4xl font-semibold sm:text-nowrap text-center'>90 Days Return</h1>
+                <h2 className='text-xl text-[#9F9F9F] text-center font-normal'>If goods have problems, consectetur adipim scing elit.</h2>
               </div>
               <div className='flex flex-col gap-2 w-[370px]'>
-                <h1 className='text-4xl  font-semibold'>Secure Payment</h1>
-                <h2 className='text-xl text-[#9F9F9F] font-normal'>100% secure payment, consectetur adipim scing elit.</h2>
+                <h1 className='text-4xl  font-semibold sm:text-nowrap text-center'>Secure Payment</h1>
+                <h2 className='text-xl text-[#9F9F9F] text-center font-normal'>100% secure payment, consectetur adipim scing elit.</h2>
               </div>
         </div>
         

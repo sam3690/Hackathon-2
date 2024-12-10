@@ -21,24 +21,46 @@ import { Button } from '@/components/ui/button';
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   const [active, setActive] = useState(1)
+  const [navToggle, setNavToggle] = useState(false)
+  const [navActive, setNavActive] = useState(0)
 
   const router = useRouter()
   
   return (
-    <div className='flex flex-row justify-between w-full h-20 px-4 absolute'>
-        <div className='flex flex-row justify-between font-normal text-xl justify-self-center ml-[500px] items-center w-[30%] h-20 px-4 '>
-            {navLinks.map((nav) => (
-                <a key={nav.id} href={`/${nav.link}`} className='font-medium'>{nav.title}</a>
+    <div className='flex flex-row justify-between w-full h-8 sm:h-20 sm:px-4 p-2 absolute'>
+        <div className='hidden sm:flex flex-row justify-between font-normal text-xl justify-self-center sm:ml-[500px] items-center w-[30%] h-20 px-4 '>
+            {navLinks.map((cart) => (
+                <a key={cart.id} href={`/${cart.link}`} className='font-medium'>{cart.title}</a>
             ))}
             
         </div>
-        <div className='flex flex-row justify-self-end items-center space-x-12'>
+        <div className='flex flex-row justify-self-end items-center sm:space-x-12 mt-6 sm:mt-0 space-x-9'>
             <Image src={navicon1} width={30} height={30} alt="account"/>
             <Image src={navicon2} width={30} height={30} alt="account"/>
             <Image src={navicon3} width={30} height={30} alt="account"/>
             <Image src={navicon4} width={30} height={30} alt="account" onClick={() => setToggle(true)}/>
 
         </div>
+        {/* Hamburger */}
+        <div className='sm:hidden flex flex-1 justify-end'>
+          <button onClick={() => setNavToggle((prev) => !prev)} className={`hamburger mt-0 hamburger--collapse z-20 ${navToggle ? 'is-active' : 'hamburger--collapse-r'}`} type='button'>
+            <div className='hamburger-box'>
+              <span className='hamburger-inner'></span>
+            </div>
+          </button>
+          <div className={`${navToggle ? 'flex scale-up-tr' : 'scale-out-tr hidden'} flex-col fixed bg-gray-800 bg-opacity-70 backdrop-blur-md w-screen h-screen top-0 z-10 right-0 `}> 
+          <ul className='list-none flex flex-col justify-center top-10 items-center h-full'>
+            {navLinks.map((nav, i) => (
+              <li key={nav.id} onClick={() => {setNavActive(i); setNavToggle(false)}} className={`font-poppins font-normal cursor-pointer text-[30px] mb-4 ${i === active && 'navbtn rounded-md'} text-white`}>
+                <a href={`/${nav.link}`} className='block'>
+                  {nav.title}
+                </a>
+              </li>
+            ))}
+
+          </ul>
+          </div>
+          
         {/* Cart */}
         <div className={toggle ? 'flex flex-col scale-up-tr drop-shadow-lg rounded-md fixed bg-main w-[450px] h-[746px] top-0 z-10 right-0 ' : 'scale-out-tr hidden'}> 
           <div className=' flex flex-col justify-start items-center h-full'>
@@ -69,6 +91,7 @@ const Navbar = () => {
               <Link href={'/checkout'} onClick={() => setToggle(false)}><Button className='bg-transparent text-black border-black border-2 rounded-full w-[130px] hover:bg-transparent'>Checkout</Button></Link>
             </div>
           </div>
+    </div>
     </div>
   )
 }

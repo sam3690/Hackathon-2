@@ -25,57 +25,57 @@ const page = () => {
           </div>
         </div>
         {/* form */}
-        <div className='flex contain-layout  flex-row w-full h-[525px] justify-between  items-center gap-3 p-10 mb-32'>
+        <div className='flex contain-layout sm:flex-row flex-col w-full h-[525px] justify-between  items-center gap-3 p-10 mb-32'>
           <div className='flex flex-row sm:flex-row justify-between items-center'>
-            <div className='w-[817px] h-[216px] translate-y-[-100px] flex flex-col '>
-              <div className='w-full h-[55px] bg-[#FFF9E5] p-4 font-medium  justify-center flex flex-row gap-16'>
+            <div className='sm:w-[817px] w-[400px] h-[216px] translate-y-[-100px] flex flex-col '>
+              <div className='w-full h-[55px] bg-[#FFF9E5] p-4 font-medium  justify-center flex flex-row sm:gap-16 gap-7'>
                 <h1>Product</h1>
                 <h1>Price</h1>
                 <h1>Quantity</h1>
                 <h1>Subtotal</h1>
               </div>
-              <div className='w-full h-[55px] bg-main p-4 flex flex-row gap-16'>
-                <Image src={asgaard} height={100} width={100} alt='asgaard' className='bg-[#FBEBB5] rounded-md h-[106px] w-[106px]'/>
-                <div className='flex flex-row justify-start pt-16 items-end gap-10'>
-                  <h1 className='text-[#9F9F9F]'>Asgaard Sofa</h1>
-                  <h1 className='text-[#9F9F9F]'>Asgaard Sofa</h1>
-                  <div className='border-2 h-[32px] w-[32px] rounded-lg text-black px-2 translate-y-1'>1</div>
-                  <h1 className='text-[#9F9F9F]'>Asgaard Sofa</h1>
-                  <Image src={yellowDelete} height={20} width={20} alt='delete' className='mt-1'/>
+              <div className='w-full h-[55px] bg-main p-4 flex flex-row sm:gap-16 gap-10'>
+                <Image src={asgaard} height={100} width={100} alt='asgaard' className='bg-[#FBEBB5] rounded-md sm:h-[106px] h-[50px] sm:w-[106px] w-[50px]'/>
+                <div className='flex flex-row justify-start pt-16 items-end sm:gap-10 gap-3'>
+                  <h1 className='text-[#9F9F9F] sm:text-base text-sm'>Asgaard Sofa</h1>
+                  <h1 className='text-[#9F9F9F] sm:text-base text-sm'>Asgaard Sofa</h1>
+                  <div className='border-2 sm:h-[32px] h-[26px] sm:w-[32px] w-[26px] sm:text-base text-sm rounded-lg text-black px-2 translate-y-1'>1</div>
+                  <h1 className='text-black sm:text-base text-sm'>Rs. 250,000.00</h1>
+                  <Image src={yellowDelete} height={20} width={20} alt='delete' className='sm:mt-1 mt-0'/>
                 </div>
 
               </div>
             </div>
           </div>
           {/* 2nd div */}
-          <div className='h-[390px] w-[393px] bg-[#FFF9E5] rounded-lg flex flex-col mx-20 gap-8 justify-center items-center'>
-            <h1 className='text-4xl font-bold'>Cart Totals</h1>
+          <div className='sm:h-[390px] h-[390px] sm:w-[393px] w-[300px] bg-[#FFF9E5] rounded-lg flex flex-col mx-20 sm:gap-8 gap-2 justify-center items-center'>
+            <h1 className='sm:text-4xl text-2xl font-bold'>Cart Totals</h1>
             <div className='flex flex-row justify-center items-start w-full p-3 gap-16 '>
-              <h1 className='font-medium  text-lg'>Subtotal</h1>
-              <h1 className='font-medium text-lg text-[#9F9F9F]'>RS. 250,000.00</h1>
+              <h1 className='font-medium sm:text-lg text-sm'>Subtotal</h1>
+              <h1 className='font-medium sm:text-lg text-sm text-[#9F9F9F]'>RS. 250,000.00</h1>
             </div>
             <div className='flex flex-row justify-center items-start w-full p-3 gap-16'>
               <h1 className='font-medium  text-lg'>Total</h1>
               <h1 className='font-medium text-2xl text-[#B88E2F]'>RS. 250,000.00</h1>
             </div>
-              <Link href={'/checkout'}><Button className='bg-transparent hover:bg-transparent text-black w-[222px] h-[59px] border-2 border-black rounded-2xl text-xl'>Checkout</Button></Link>
+              <Link href={'/checkout'}><Button className='bg-transparent hover:bg-transparent text-black sm:w-[222px] w-[150px] sm:h-[59px] h-[40px] border-2 border-black rounded-2xl sm:text-xl text-base'>Checkout</Button></Link>
           </div>
         </div>      
           {/* pink section */}
-          <div className='flex flex-row justify-center items-center gap-8 p-24 w-full h-[300px] bg-[#FAF4F4]'>
+          <div className='flex sm:flex-row flex-col justify-center items-center gap-8 p-24 w-full sm:h-[300px] h-fit bg-[#FAF4F4]'>
               <div className='flex flex-col gap-2 w-[370px]'>
-                <h1 className='text-4xl font-semibold'>Free Delivery</h1>
-                <h2 className='text-xl font-normal text-[#9F9F9F]'>For all oders over $50, consectetur adipim scing elit.</h2>
+                <h1 className='text-4xl font-semibold sm:text-nowrap text-center'>Free Delivery</h1>
+                <h2 className='text-xl font-normal text-center text-[#9F9F9F]'>For all oders over $50, consectetur adipim scing elit.</h2>
               </div>
               <div className='flex flex-col gap-2 w-[370px]'>
-                <h1 className='text-4xl font-semibold'>90 Days Return</h1>
-                <h2 className='text-xl text-[#9F9F9F] font-normal'>If goods have problems, consectetur adipim scing elit.</h2>
+                <h1 className='text-4xl font-semibold sm:text-nowrap text-center'>90 Days Return</h1>
+                <h2 className='text-xl text-[#9F9F9F] text-center font-normal'>If goods have problems, consectetur adipim scing elit.</h2>
               </div>
               <div className='flex flex-col gap-2 w-[370px]'>
-                <h1 className='text-4xl  font-semibold'>Secure Payment</h1>
-                <h2 className='text-xl text-[#9F9F9F] font-normal'>100% secure payment, consectetur adipim scing elit.</h2>
+                <h1 className='text-4xl  font-semibold sm:text-nowrap text-center'>Secure Payment</h1>
+                <h2 className='text-xl text-[#9F9F9F] text-center font-normal'>100% secure payment, consectetur adipim scing elit.</h2>
               </div>
-          </div>
+        </div>
     </div>
   )
 }

@@ -31,9 +31,9 @@ const Hero = () => {
     }, [isDesktop])
     
   return (
-    <main className='flex flex-col justify-between w-full h-[1000px] bg-[#FBEBB5]'>
-        <div className='flex flex-col translate-y-[300px] max-w-fit translate-x-[300px]'>
-            <div className='text-[60px]'>
+    <main className='flex sm:flex-row flex-col   justify-between w-full sm:h-[1000px] h-[800px] bg-[#FBEBB5]'>
+        <div className='flex flex-col sm:translate-y-[300px] translate-y-[500px] sm:max-w-fit max-w-64 sm:translate-x-[300px] translate-x-[50px]'>
+            <div className='sm:text-[60px] text-[40px] font-medium'>
             <h1>Rocket Single</h1>
             <h1>seater</h1>
             </div><br />
@@ -43,8 +43,8 @@ const Hero = () => {
             <Image src={line1} width={100} height={100} alt='line' className='text-xl'/>
         </div>
         <br className='sm:hidden'/>
-        <div className='flex flex-col items-end justify-between object-cover self-end mt-[-100px] mr-20 top-0 h-[900px] w-[800px]'>
-            <Image src={hero} width={1000} height={1000} alt='sofa' className={isDesktop === 'large'?'h-[700px] w-[700px]' : isDesktop === 'medium' ? 'h-[300px] w-[300px] mb-[-30px]' : 'h-[150px] w-[150px] mb-[-10px]'}/>
+        <div className='flex flex-col items-end justify-between object-cover self-end mt-[-100px] cm:mr-20 mr-10 top-0 h-[900px] w-[800px]'>
+            <Image src={hero} width={1000} height={1000} alt='sofa' className={isDesktop === 'large'?'h-[700px] w-[700px]' : 'h-[300px] w-[300px] mb-[-30px]'}/>
         </div>
     </main>
   )

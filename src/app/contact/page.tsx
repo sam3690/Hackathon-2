@@ -119,20 +119,20 @@ const page = () => {
         </div>
       </div>
       {/* pink section */}
-        <div className='flex flex-row justify-center items-center gap-8 p-24 w-full h-[300px] bg-[#FAF4F4]'>
-                <div className='flex flex-col gap-2 w-[370px]'>
-                  <h1 className='text-4xl font-semibold'>Free Delivery</h1>
-                  <h2 className='text-xl font-normal text-[#9F9F9F]'>For all oders over $50, consectetur adipim scing elit.</h2>
-                </div>
-                <div className='flex flex-col gap-2 w-[370px]'>
-                  <h1 className='text-4xl font-semibold'>90 Days Return</h1>
-                  <h2 className='text-xl text-[#9F9F9F] font-normal'>If goods have problems, consectetur adipim scing elit.</h2>
-                </div>
-                <div className='flex flex-col gap-2 w-[370px]'>
-                  <h1 className='text-4xl  font-semibold'>Secure Payment</h1>
-                  <h2 className='text-xl text-[#9F9F9F] font-normal'>100% secure payment, consectetur adipim scing elit.</h2>
-                </div>
-          </div>
+      <div className='flex sm:flex-row flex-col justify-center items-center gap-8 p-24 w-full sm:h-[300px] h-fit bg-[#FAF4F4]'>
+              <div className='flex flex-col gap-2 w-[370px]'>
+                <h1 className='text-4xl font-semibold sm:text-nowrap text-center'>Free Delivery</h1>
+                <h2 className='text-xl font-normal text-center text-[#9F9F9F]'>For all oders over $50, consectetur adipim scing elit.</h2>
+              </div>
+              <div className='flex flex-col gap-2 w-[370px]'>
+                <h1 className='text-4xl font-semibold sm:text-nowrap text-center'>90 Days Return</h1>
+                <h2 className='text-xl text-[#9F9F9F] text-center font-normal'>If goods have problems, consectetur adipim scing elit.</h2>
+              </div>
+              <div className='flex flex-col gap-2 w-[370px]'>
+                <h1 className='text-4xl  font-semibold sm:text-nowrap text-center'>Secure Payment</h1>
+                <h2 className='text-xl text-[#9F9F9F] text-center font-normal'>100% secure payment, consectetur adipim scing elit.</h2>
+              </div>
+        </div>
     </div>
   )
 }

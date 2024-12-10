@@ -173,26 +173,26 @@ export default function BlogPost() {
     </div>
     <div className="w-full space-y-20">
     <div className='flex flex-row items-center justify-center w-full mt-10'>
-        <div className='flex flex-row w-[400px] gap-3 h-[80px] justify-between '> 
-          <div className='bg-[#FBEBB5] h-[60px] w-[60px] text-lg rounded-lg px-6 py-4'>1</div>
-          <div className='bg-[#FFF9E5] h-[60px] w-[60px] text-lg rounded-lg px-6 py-4'>2</div>
-          <div className='bg-[#FFF9E5] h-[60px] w-[60px] text-lg rounded-lg px-6 py-4'>3</div>
-          <div className='bg-[#FFF9E5] h-[60px] w-[90px] text-lg rounded-lg px-6 py-4'>Next</div>
-        </div>
+        <div className='flex flex-row sm:w-[400px] w-[200px] sm:gap-3 gap-0 h-[80px] justify-between '> 
+            <div className='bg-[#FBEBB5] sm:h-[60px] h-[30px] sm:w-[60px] w-[30px] sm:text-lg text-sm rounded-lg sm:px-6 px-3 sm:py-4 py-2'>1</div>
+            <div className='bg-[#FFF9E5] sm:h-[60px] h-[30px] sm:w-[60px] w-[30px] sm:text-lg text-sm rounded-lg sm:px-6 px-3 sm:py-4 py-2'>2</div>
+            <div className='bg-[#FFF9E5] sm:h-[60px] h-[30px] sm:w-[60px] w-[30px] sm:text-lg text-sm rounded-lg sm:px-6 px-3 sm:py-4 py-2'>3</div>
+            <div className='bg-[#FFF9E5] sm:h-[60px] h-[30px] sm:w-[90px] w-[55px] sm:text-lg text-sm rounded-lg sm:px-6 px-3 sm:py-4 py-2'>Next</div>
+          </div>
     </div>
       {/* Features */}
-      <div className='flex flex-row justify-center items-center gap-8 p-24 w-full h-[300px] bg-[#FAF4F4]'>
+      <div className='flex sm:flex-row flex-col justify-center items-center gap-8 p-24 w-full sm:h-[300px] h-fit bg-[#FAF4F4]'>
               <div className='flex flex-col gap-2 w-[370px]'>
-                <h1 className='text-4xl font-semibold'>Free Delivery</h1>
-                <h2 className='text-xl font-normal text-[#9F9F9F]'>For all oders over $50, consectetur adipim scing elit.</h2>
+                <h1 className='text-4xl font-semibold sm:text-nowrap text-center'>Free Delivery</h1>
+                <h2 className='text-xl font-normal text-center text-[#9F9F9F]'>For all oders over $50, consectetur adipim scing elit.</h2>
               </div>
               <div className='flex flex-col gap-2 w-[370px]'>
-                <h1 className='text-4xl font-semibold'>90 Days Return</h1>
-                <h2 className='text-xl text-[#9F9F9F] font-normal'>If goods have problems, consectetur adipim scing elit.</h2>
+                <h1 className='text-4xl font-semibold sm:text-nowrap text-center'>90 Days Return</h1>
+                <h2 className='text-xl text-[#9F9F9F] text-center font-normal'>If goods have problems, consectetur adipim scing elit.</h2>
               </div>
               <div className='flex flex-col gap-2 w-[370px]'>
-                <h1 className='text-4xl  font-semibold'>Secure Payment</h1>
-                <h2 className='text-xl text-[#9F9F9F] font-normal'>100% secure payment, consectetur adipim scing elit.</h2>
+                <h1 className='text-4xl  font-semibold sm:text-nowrap text-center'>Secure Payment</h1>
+                <h2 className='text-xl text-[#9F9F9F] text-center font-normal'>100% secure payment, consectetur adipim scing elit.</h2>
               </div>
         </div>
     </div>

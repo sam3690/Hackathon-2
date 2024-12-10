@@ -4,12 +4,12 @@ import sofa from '../public/assets/contents/white-sofa-1.png'
 import Image from 'next/image'
 const Productlist = () => {
   return (
-    <div className='grid grid-cols-4 gap-4 justify-items-end '>
+    <div className='grid sm:grid-cols-4 grid-cols-2 gap-4 sm:m-0 m-2 justify-items-end '>
       { shopLinks.map((prod) => (
       <div key={prod.id} className='col-span-1  h-[350px]  gap-2 justify-center items-end'>
-        <Image src={prod.imgUrl} height={300} width={300} alt='sofa' className=' h-[300px] w-[300px] object-contain' />
-        <h2>{prod.title}</h2>
-        <h1 className='text-2xl'>{prod.price}</h1>
+        <Image src={prod.imgUrl} height={300} width={300} alt='sofa' className=' sm:h-[300px] h-[200px] sm:w-[300px] w-[200px] object-contain' />
+        <h2 className='sm:text-lg text-sm'>{prod.title}</h2>
+        <h1 className='sm:text-2xl text-xl'>{prod.price}</h1>
       </div>
       ))}
       

@@ -9,11 +9,11 @@ import Footer from './Footer';
 
 const HomePage = () => {
   return (
-    <main id='home' className="flex min-h-screen flex-col items-center justify-between font-poppins">
+    <main id='home' className="flex min-h-screen flex-col gap-2 items-center justify-between font-poppins">
         <Hero/>
         <Shop2 />        
         <Shop3 />
-        <Asgaard/>
+        <Asgaard />
         <OurBlogs />
         <Ourinsta />
     </main>  
