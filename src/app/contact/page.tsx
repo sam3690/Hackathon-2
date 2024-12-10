@@ -24,7 +24,7 @@ const page = () => {
       <div className="flex-grow px-4 py-12">
             <div className='w-fill flex flex-col gap-4 justify-center items-center'>
                 <h2 className="text-5xl font-semibold">Get In Touch With Us</h2>
-                <div className='w-[644px] items-center justify-center'>
+                <div className='sm:w-[644px] w-full items-center justify-center'>
                     <p className="text-[#9F9F9F] text-center">
                       For more information about our products and services, please feel free to drop us an email.</p>
                       <p className='text-[#9F9F9F] text-center'> Our staff will always be there to help you out.</p>
