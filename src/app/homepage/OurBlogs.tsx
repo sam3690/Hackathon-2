@@ -14,7 +14,7 @@ const OurBlogs = () => {
             <h1 className='text-5xl'>Our Blogs</h1><br />
             <p className='text-[#9F9F9F]'>Find a bright ideal to suit your taste with our great selection</p>
         </div>
-        <div className='flex sm:felx-row flex-col gap-5 sm:gap-0 justify-center sm:items-center items-end w-full h-full '>
+        <div className='flex sm:flex-row flex-col gap-5 sm:gap-3 justify-center sm:items-center items-end w-full h-full '>
             <div className='flex flex-col justify-center items-center w-full h-full gap-4 ml-40'>
                 <Image src={rectangle13} alt='rectangle13' width={1000} height={1000} className='sm:h-[393px] h-[300px] sm:w-[393px] w-[300px]'/>
                 <h1 className='text-xl'>Going all-in with millennial design</h1>

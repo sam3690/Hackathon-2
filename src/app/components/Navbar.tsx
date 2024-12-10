@@ -20,7 +20,7 @@ import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
-  const [active, setActive] = useState(1)
+  const [active, setActive] = useState(0)
   const [navToggle, setNavToggle] = useState(false)
   const [navActive, setNavActive] = useState(0)
 
@@ -41,17 +41,17 @@ const Navbar = () => {
             <Image src={navicon4} width={30} height={30} alt="account" onClick={() => setToggle(true)}/>
 
         </div>
-        {/* Hamburger */}
+        {/* mobile nav */}
         <div className='sm:hidden flex flex-1 justify-end'>
-          <button onClick={() => setNavToggle((prev) => !prev)} className={`hamburger mt-0 hamburger--collapse z-20 ${navToggle ? 'is-active' : 'hamburger--collapse-r'}`} type='button'>
+          <button onClick={() => setNavToggle((prev) => !prev)} className={`hamburger hamburger--collapse z-20 ${navToggle ? 'is-active' : 'hamburger--collapse-r'}`} type='button'>
             <div className='hamburger-box'>
               <span className='hamburger-inner'></span>
             </div>
           </button>
-          <div className={`${navToggle ? 'flex scale-up-tr' : 'scale-out-tr hidden'} flex-col fixed bg-gray-800 bg-opacity-70 backdrop-blur-md w-screen h-screen top-0 z-10 right-0 `}> 
+          <div className={`${navToggle ? 'flex scale-up-tr' : 'scale-out-tr hidden'} flex-col fixed bg-gray-800 bg-opacity-70 backdrop-blur-md w-full h-full top-0 z-10 right-0 `}> 
           <ul className='list-none flex flex-col justify-center top-10 items-center h-full'>
             {navLinks.map((nav, i) => (
-              <li key={nav.id} onClick={() => {setNavActive(i); setNavToggle(false)}} className={`font-poppins font-normal cursor-pointer text-[30px] mb-4 ${i === active && 'navbtn rounded-md'} text-white`}>
+              <li key={nav.link} onClick={() => {setNavActive(i); setNavToggle(false)}} className={`font-poppins font-normal cursor-pointer text-[30px] mb-4 ${i === navActive && 'navbtn rounded-md'} text-white`}>
                 <a href={`/${nav.link}`} className='block'>
                   {nav.title}
                 </a>
@@ -60,9 +60,12 @@ const Navbar = () => {
 
           </ul>
           </div>
+
+        </div>
+
           
         {/* Cart */}
-        <div className={toggle ? 'flex flex-col scale-up-tr drop-shadow-lg rounded-md fixed bg-main sm:w-[450px] w-full sm:h-[746px] h-full top-0 z-30 right-0 ' : 'scale-out-tr hidden'}> 
+        <div className={toggle ? 'flex flex-col scale-up-tr drop-shadow-lg rounded-md fixed bg-main sm:w-[450px] w-full sm:h-[746px] h-full z-30 right-0 ' : 'scale-out-tr hidden'}> 
           <div className=' flex flex-col justify-start items-center h-full'>
               <div className='flex flex-row justify-between items-center w-full h-20 px-4 '>
                 <h1 className='text-3xl font-semibold'>Shopping Cart</h1>
@@ -91,8 +94,8 @@ const Navbar = () => {
               <Link href={'/checkout'} onClick={() => setToggle(false)}><Button className='bg-transparent text-black border-black border-2 rounded-full w-[130px] hover:bg-transparent'>Checkout</Button></Link>
             </div>
           </div>
-    </div>
-    </div>
+        </div>
+    
   )
 }
 
