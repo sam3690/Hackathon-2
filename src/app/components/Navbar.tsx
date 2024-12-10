@@ -28,7 +28,7 @@ const Navbar = () => {
   
   return (
     <div className='flex flex-row justify-between w-full h-8 sm:h-20 sm:px-4 p-2 absolute'>
-        <div className='hidden sm:flex flex-row justify-between font-normal text-xl justify-self-center sm:ml-[500px] items-center w-[30%] h-20 px-4 '>
+        <div className='hidden sm:flex flex-row justify-between font-normal text-xl justify-self-center sm:ml-[500px] items-center w-[30%] h-20 px-4 z-'>
             {navLinks.map((cart) => (
                 <a key={cart.id} href={`/${cart.link}`} className='font-medium'>{cart.title}</a>
             ))}
@@ -62,7 +62,7 @@ const Navbar = () => {
           </div>
           
         {/* Cart */}
-        <div className={toggle ? 'flex flex-col scale-up-tr drop-shadow-lg rounded-md fixed bg-main w-[450px] h-[746px] top-0 z-10 right-0 ' : 'scale-out-tr hidden'}> 
+        <div className={toggle ? 'flex flex-col scale-up-tr drop-shadow-lg rounded-md fixed bg-main sm:w-[450px] w-full sm:h-[746px] h-full top-0 z-30 right-0 ' : 'scale-out-tr hidden'}> 
           <div className=' flex flex-col justify-start items-center h-full'>
               <div className='flex flex-row justify-between items-center w-full h-20 px-4 '>
                 <h1 className='text-3xl font-semibold'>Shopping Cart</h1>
