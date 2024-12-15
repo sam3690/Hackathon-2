@@ -30,7 +30,7 @@ const Navbar = () => {
     <div className='flex flex-row justify-between w-full h-8 sm:h-20 sm:px-4 p-2 absolute'>
         <div className='hidden sm:flex flex-row justify-between font-normal text-xl justify-self-center sm:ml-[500px] items-center w-[30%] h-20 px-4 z-'>
             {navLinks.map((cart) => (
-                <a key={cart.id} href={`/${cart.link}`} className='font-medium'>{cart.title}</a>
+                <Link key={cart.id} href={`/${cart.link}`} className='font-medium'>{cart.title}</Link>
             ))}
             
         </div>
@@ -52,9 +52,9 @@ const Navbar = () => {
           <ul className='list-none flex flex-col justify-center top-10 items-center h-full'>
             {navLinks.map((nav, i) => (
               <li key={nav.link} onClick={() => {setNavActive(i); setNavToggle(false)}} className={`font-poppins font-normal cursor-pointer text-[30px] mb-4 ${i === navActive && 'navbtn rounded-md'} text-white`}>
-                <a href={`/${nav.link}`} className='block'>
+                <Link href={`/${nav.link}`} className='block'>
                   {nav.title}
-                </a>
+                </Link>
               </li>
             ))}
 
