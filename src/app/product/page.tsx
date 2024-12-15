@@ -29,7 +29,7 @@ const page = () => {
             {/* Product details */}
             <div className='felx flex-row w-full p-24 items-center  border-2 justify-between'>
                 
-                <div className='flex flex-row gap-10 '>
+                <div className='flex flex-row sm:gap-32 md:gap-10 gap-2 '>
                     {/* side images */}
                     <div className='flex flex-col gap-10 p-8'>
                         <div className='flex flex-wrap flex-col h-[80px] w-[76px] rounded-lg bg-[#FFF9E5] items-center justify-center'>
